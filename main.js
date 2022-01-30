@@ -33,7 +33,7 @@ fetch('https://multitierproduct.herokuapp.com/products').then((data) => {
         <div class="cart-price">€${values.price}</div>
         <input type="number" value="1" class="cart-quantity">
         </div>
-        <i class='bx bxs-trash-alt cart-remove' class=""></i>
+        <i class='bx bxs-trash-alt cart-remove'></i>
         </div>`;
     });
 document.getElementById("cart-content").innerHTML=data2;
@@ -51,7 +51,7 @@ document.getElementById("cart-content").innerHTML=data2;
         <div class="cart-price">€${values.price}</div>
         <input type="number" value="1" class="cart-quantity">
         </div>
-        <i class='bx bxs-trash-alt cart-remove' class=""></i>
+        <i class='bx bxs-trash-alt cart-remove' ></i>
         </div>`;    
        });
        document.getElementById("cart-content").innerHTML=data2;

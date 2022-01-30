@@ -23,7 +23,7 @@ body{
 .container{
     max-width: 1068px;
     margin: auto;
-    width: 100%;
+    width: 50%;
 }
 header{
     position: fixed;
@@ -40,10 +40,39 @@ header{
     justify-content: space-between;
     padding: 20px 0 ;
 }
+
+
+
+.nav .nav-menu li{
+    list-style:lower-alpha;
+    display: inline-block;
+}
+.nav .nav-menu li a{
+    display: block;
+    color: rgb(179, 119, 131);
+    font-size: 20px;
+    font-weight: 600;
+    margin-left: 25px;
+    transition: color 0.3s ease;
+}
+.nav .nav-menu li a:hover{
+    color: rgb(31, 27, 28);
+}
+
+.nav-btn{
+    color: rgb(27, 26, 26);
+    font-size: 23px;
+    cursor: pointer;
+    display: none;
+}
+
 .logo{
-    font-size: 1.1rem;
-    color: var(--text-color);
+    font-size: 2.1rem;
+    color: rgb(185, 5, 5);
     font-weight: 400;
+}
+.logo:hover{
+    color:  rgb(196, 190, 190);
 }
 #cart-icon{
     font-size: 1.8rem;
@@ -52,6 +81,47 @@ header{
 section{
     padding: 4rem 0 3rem;
 }
+
+
+.home{
+    display:flex;
+    background: url("https://images.unsplash.com/photo-1586689311267-e88bb0509995?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80") no-repeat center;
+    height: 100vh;
+    color: rgb(255, 253, 253);
+    min-height: 500px;
+    background-size: cover;
+    background-attachment: fixed; 
+    font-family: 'Source Sans Pro', sans-serif;
+}
+.home .width{
+  width: 100%;
+  display: flex;
+}
+.home .width .row{
+  margin-right: 0;
+} 
+.hm-content{ 
+  margin: auto;
+  width: 50%;
+  padding: 10px;
+}
+.home .hm-content .hm-heading1{
+    font-size: 70px;
+}
+.home .hm-content .hm-heading2{
+    font-size: 80px;
+    font-weight: 600;
+    margin-left: -3px; 
+}
+.home .hm-content .hm-heading3{
+    font-size: 45px;    
+}
+.home .hm-content .hm-heading3 span{
+    color: rgb(179, 119, 131);
+}
+
+
+
 .cart{
     position: fixed;
     top: 0;
@@ -77,7 +147,7 @@ section{
     grid-template-columns: 32% 50% 18%;
     align-items: center;
     gap: 1rem;
-    margin-top: 1rem;
+    margin-top: auto;
 }
 .cart-img{
     width: 100px;
@@ -199,4 +269,12 @@ section{
 }
 .add-cart:hover{
     background: hsl(249, 32%, 17%);
+}
+
+
+footer{
+    background: #111;
+    padding: 25px 30px;
+    color: #fff;
+    text-align: center;
 }

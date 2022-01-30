@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="contact.css">
+</head>
+<body>
+    <header>
+        <div class="nav container">
+            <a href="home.html" class="logo">OLUSANYA</a>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-btn">Store</a></li>
+                <li><a href="about.html" class="nav-btn">About</a></li>
+                <li><a href="contact.html" class="nav-btn">Contact</a></li>
+                <li><a href="faq.html" class="nav-btn">FAQ</a></li>
+            </ul>
+        </div>
+    </header>
+    <div id="overlay">
+        <form onsubmit="event.preventDefault(); validateForm()">
+            <h1>Contact Us</h1>
+            <label for="name">Name:</label>
+            <input type="text" id="name" placeholder="Input name">
+            <small class="error"></small>
+            <form action="">
+
+            <label for="name">email:</label>
+            <input type="text"  id="email" placeholder="Input email">
+            <small class="error"></small>
+
+            <label for="message">Message:</label>
+            <textarea id="message" placeholder="Message" rows="6"></textarea>
+            <small class="error"></small>
+            <h6>*Message should not be more than 200 words</h6>
+
+            <div class="center">
+                <input type="submit" value="Send Message" class="input">
+                <p id="success"></p>
+            </div>
+        </form>
+    </div>
+    <script src="contact.js"></script>
+</body>
+</html>
